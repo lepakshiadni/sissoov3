@@ -28,7 +28,7 @@ jobs:
           
       - name: Build Frontend
         run: |
-          cd ../Client #Client
+          cd $GITHUB_WORKSPACE/Client #Client
           npm run build
           
       - name: Configure AWS Credentials
