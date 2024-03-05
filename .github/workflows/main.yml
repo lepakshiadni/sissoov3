@@ -30,11 +30,12 @@ jobs:
         run: |
           cd Sisso-Main-Dev-main/Client #Client
           npm run build
+          
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v2
         with:
-          aws-access-key-id: ${{ AWS_ACCESS_KEY_ID }}
-          aws-secret-access-key: ${{ AWS_SECRET_ACCESS_KEY }}
+          aws-access-key-id: ${{ secrets.YOUR_UPDATED_AWS_ACCESS_KEY_ID1 }}
+          aws-secret-access-key: ${{ secrets.YOUR_UPDATED_AWS_SECRET_ACCESS_KEY1 }}
           aws-region: us-east-1  # Specify any region here, as S3 buckets in the global region can be accessed from any region
 
       - name: Deploy to S3
