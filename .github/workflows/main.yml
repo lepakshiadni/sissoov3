@@ -20,7 +20,7 @@ jobs:
 
       - name: Install Dependencies
         run: |
-          cd sissoov3/Client # Navigate to Client directory (frontend)
+          cd /Client # Navigate to Client directory (frontend)
           npm install
           npm install apexcharts@^3.41.0 # Install apexcharts as a peer dependency
           cd ../Server   # Navigate to Server directory (backend)
@@ -28,7 +28,7 @@ jobs:
           
       - name: Build Frontend
         run: |
-          cd sissoov3/Client #Client
+          cd /Client #Client
           npm run build
           
       - name: Configure AWS Credentials
