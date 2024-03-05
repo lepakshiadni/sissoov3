@@ -1,5 +1,5 @@
 {
-  "name": "otp_verify",
+  "name": "sisso",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
